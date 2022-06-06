@@ -53,6 +53,46 @@ allprojects {
             sign(publishing.publications)
         }
     }
+
+    publishing {
+        publications {
+            create<MavenPublication>("maven") {
+                pom {
+                    name.set(project.name + " " + project.version)
+                    description.set("Bill of materials for IntellectualSites projects.")
+                    url.set("https://github.com/IntellectualSites/bom")
+
+                    licenses {
+                        license {
+                            name.set("GNU General Public License, Version 3.0")
+                            url.set("https://www.gnu.org/licenses/gpl-3.0.html")
+                            distribution.set("repo")
+                        }
+                    }
+
+                    developers {
+                        developer {
+                            id.set("NotMyFault")
+                            name.set("Alexander Brandes")
+                            organization.set("IntellectualSites")
+                            email.set("contact@notmyfault.dev")
+                        }
+                    }
+
+                    scm {
+                        url.set("https://github.com/IntellectualSites/bom")
+                        connection.set("scm:https://IntellectualSites@github.com/IntellectualSites/bom.git")
+                        developerConnection.set("scm:git://github.com/IntellectualSites/bom.git")
+                    }
+
+                    issueManagement{
+                        system.set("GitHub")
+                        url.set("https://github.com/IntellectualSites/bom/issues")
+                    }
+                }
+            }
+        }
+    }
 }
 
 nexusPublishing {
