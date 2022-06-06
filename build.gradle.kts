@@ -21,6 +21,18 @@ allprojects {
         maven {
             url = uri("https://oss.sonatype.org/content/repositories/snapshots/")
         }
+        maven {
+            url = uri("https://jitpack.io")
+            content {
+                includeModule("com.github.MilkBowl", "VaultAPI")
+            }
+        }
+        maven {
+            url = uri("https://repo.papermc.io/repository/maven-public/")
+            content {
+                includeModule("io.papermc", "paperlib")
+            }
+        }
     }
 }
 

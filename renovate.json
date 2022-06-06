@@ -6,7 +6,11 @@
   "ignoreDeps": [
     "net.kyori:adventure-api",
     "net.kyori:adventure-text-minimessage",
-    "net.kyori:adventure-platform-bukkit"
+    "net.kyori:adventure-platform-bukkit",
+    "org.yaml:snakeyaml",
+    "com.google.code.gson:gson",
+    "com.google.guava:guava",
+    "org.apache.logging.log4j:log4j-api"
   ],
   "timezone": "Europe/Berlin",
   "schedule": [
