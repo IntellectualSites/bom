@@ -3,18 +3,31 @@
     "config:base",
     ":disableDependencyDashboard"
   ],
-  "ignoreDeps": [
-    "net.kyori:adventure-api",
-    "net.kyori:adventure-text-minimessage",
-    "net.kyori:adventure-platform-bukkit",
-    "org.yaml:snakeyaml",
-    "com.google.code.gson:gson",
-    "com.google.guava:guava",
-    "org.apache.logging.log4j:log4j-api"
-  ],
   "timezone": "Europe/Berlin",
   "schedule": [
     "before 9am"
+  ],
+  "packageRules": [
+    {
+      "matchPaths": ["bom-1.16/**"],
+      "ignoreDeps": [
+        "net.kyori:adventure-api",
+        "net.kyori:adventure-text-minimessage",
+        "net.kyori:adventure-platform-bukkit"
+      ]
+    },
+    {
+      "matchPaths": ["bom-1.18/**"],
+      "ignoreDeps": [
+        "net.kyori:adventure-api",
+        "net.kyori:adventure-text-minimessage",
+        "net.kyori:adventure-platform-bukkit",
+        "org.yaml:snakeyaml",
+        "com.google.code.gson:gson",
+        "com.google.guava:guava",
+        "org.apache.logging.log4j:log4j-api"
+      ]
+    }
   ],
   "labels": ["Renovate"],
   "commitMessagePrefix": "build: ",
