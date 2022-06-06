@@ -10,11 +10,25 @@ plugins {
     eclipse
 }
 
-group = "com.intellectualsites.bom"
 version = "1.0.0-SNAPSHOT"
 
-repositories {
-    mavenCentral()
+allprojects {
+    group = "com.intellectualsites.bom"
+    version = rootProject.version
+
+    repositories {
+        mavenCentral()
+    }
+}
+
+subprojects {
+    apply {
+        plugin<MavenPublishPlugin>()
+        plugin<SigningPlugin>()
+
+        plugin<IdeaPlugin>()
+        plugin<EclipsePlugin>()
+    }
 }
 
 signing {
@@ -24,44 +38,6 @@ signing {
         useInMemoryPgpKeys(signingKey, signingPassword)
         signing.isRequired
         sign(publishing.publications)
-    }
-}
-
-publishing {
-    publications {
-        create<MavenPublication>("maven") {
-            pom {
-                name.set(project.name + " " + project.version)
-                description.set("Bill of materials for IntellectualSites projects")
-                url.set("https://github.com/IntellectualSites/bom")
-
-                licenses {
-                    license {
-                        name.set("MIT")
-                        url.set("https://opensource.org/licenses/MIT")
-                        distribution.set("repo")
-                    }
-                }
-
-                developers {
-                    developer {
-                        id.set("NotMyFault")
-                        name.set("Alexander Brandes")
-                    }
-                }
-
-                scm {
-                    url.set("https://github.com/IntellectualSites/bom")
-                    connection.set("scm:https://IntellectualSites@github.com/IntellectualSites/bom.git")
-                    developerConnection.set("scm:git://github.com/IntellectualSites/bom.git")
-                }
-
-                issueManagement {
-                    system.set("GitHub")
-                    url.set("https://github.com/IntellectualSites/bom/issues")
-                }
-            }
-        }
     }
 }
 
