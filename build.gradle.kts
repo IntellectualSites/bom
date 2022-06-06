@@ -39,6 +39,7 @@ allprojects {
             url = uri("https://repo.papermc.io/repository/maven-public/")
             content {
                 includeModule("io.papermc", "paperlib")
+                includeModule("io.papermc.paper", "paper-api")
             }
         }
     }

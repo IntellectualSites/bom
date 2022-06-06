@@ -3,11 +3,14 @@ plugins {
 }
 
 bomGenerator {
-    // Native Minecraft dependencies - locked to the latest version we support
+    // Native Minecraft dependencies - locked at 1.16.5
     includeDependency("org.yaml", "snakeyaml", "1.27")
     includeDependency("com.google.code.gson", "gson", "2.8.0")
     includeDependency("com.google.guava", "guava", "21.0")
     includeDependency("org.apache.logging.log4j", "log4j-api", "2.8.1")
+
+    // Paper
+    includeDependency("com.destroystokyo.paper", "paper-api", "1.16.5-R0.1-SNAPSHOT")
 
     // Third party dependencies
     includeDependency("org.checkerframework", "checker-qual", "3.22.0")
@@ -16,6 +19,12 @@ bomGenerator {
     includeDependency("net.kyori", "adventure-text-minimessage", "4.1.0-SNAPSHOT")
     includeDependency("net.kyori", "adventure-platform-bukkit", "4.0.1")
     includeDependency("com.intellectualsites.paster", "Paster", "1.1.4")
+
+    // IntellectualSites plugins
+    includeDependency("com.plotsquared", "PlotSquared-Core", "6.8.1")
+    includeDependency("com.plotsquared", "PlotSquared-Bukkit", "6.8.1")
+    includeDependency("com.fastasyncworldedit", "FastAsyncWorldEdit-Core", "2.2.0")
+    includeDependency("com.fastasyncworldedit", "FastAsyncWorldEdit-Bukkit", "2.2.0")
 
     // Plugin dependencies
     includeDependency("com.github.MilkBowl", "VaultAPI", "1.7.1")

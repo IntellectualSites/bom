@@ -14,7 +14,7 @@
   ],
   "timezone": "Europe/Berlin",
   "schedule": [
-    "every monday"
+    "every day"
   ],
   "labels": ["Renovate"],
   "commitMessagePrefix": "build: ",
