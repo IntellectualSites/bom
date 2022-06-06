@@ -12,18 +12,6 @@ plugins {
 
 version = "1.0.0-SNAPSHOT"
 
-allprojects {
-    group = "com.intellectualsites"
-    version = rootProject.version
-
-    repositories {
-        mavenCentral()
-        maven {
-            url = uri("https://oss.sonatype.org/content/repositories/snapshots/")
-        }
-    }
-}
-
 subprojects {
     apply {
         plugin<MavenPublishPlugin>()
@@ -34,13 +22,25 @@ subprojects {
     }
 }
 
-signing {
-    if (!version.toString().endsWith("-SNAPSHOT")) {
-        val signingKey: String? by project
-        val signingPassword: String? by project
-        useInMemoryPgpKeys(signingKey, signingPassword)
-        signing.isRequired
-        sign(publishing.publications)
+allprojects {
+    group = "com.intellectualsites.bom"
+    version = rootProject.version
+
+    repositories {
+        mavenCentral()
+        maven {
+            url = uri("https://oss.sonatype.org/content/repositories/snapshots/")
+        }
+    }
+
+    signing {
+        if (!version.toString().endsWith("-SNAPSHOT")) {
+            val signingKey: String? by project
+            val signingPassword: String? by project
+            useInMemoryPgpKeys(signingKey, signingPassword)
+            signing.isRequired
+            sign(publishing.publications)
+        }
     }
 }
 
