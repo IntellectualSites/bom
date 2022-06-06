@@ -13,11 +13,14 @@ plugins {
 version = "1.0.0-SNAPSHOT"
 
 allprojects {
-    group = "com.intellectualsites.bom"
+    group = "com.intellectualsites"
     version = rootProject.version
 
     repositories {
         mavenCentral()
+        maven {
+            url = uri("https://oss.sonatype.org/content/repositories/snapshots/")
+        }
     }
 }
 
