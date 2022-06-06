@@ -10,7 +10,7 @@ bomGenerator {
     includeDependency("org.apache.logging.log4j", "log4j-api", "2.17.1")
 
     // Third party dependencies
-    includeDependency("org.checkerframework", "checker-qual", "3.22.0")
+    includeDependency("org.checkerframework", "checker-qual", "3.22.1")
     // Adventure & Minimessage
     includeDependency("net.kyori", "adventure-api", "4.9.3")
     includeDependency("net.kyori", "adventure-text-minimessage", "4.1.0-SNAPSHOT")
