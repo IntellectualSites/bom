@@ -21,8 +21,8 @@ bomGenerator {
     includeDependency("com.intellectualsites.paster", "Paster", "1.1.4")
 
     // IntellectualSites plugins
-    includeDependency("com.plotSquared", "PlotSquared-Core", "6.8.1")
-    includeDependency("com.plotSquared", "PlotSquared-Bukkit", "6.8.1")
+    includeDependency("com.plotsquared", "PlotSquared-Core", "6.8.1")
+    includeDependency("com.plotsquared", "PlotSquared-Bukkit", "6.8.1")
     includeDependency("com.fastasyncworldedit", "FastAsyncWorldEdit-Core", "2.2.0")
     includeDependency("com.fastasyncworldedit", "FastAsyncWorldEdit-Bukkit", "2.2.0")
 
