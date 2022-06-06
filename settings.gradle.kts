@@ -1,3 +1,3 @@
 rootProject.name = "bom"
 
-include("bom-1.16.5", "bom-newest")
+include("bom-1.16.x", "bom-1.18.x", "bom-newest")

@@ -3,21 +3,21 @@ plugins {
 }
 
 bomGenerator {
-    // Native Minecraft dependencies - locked at the version the game uses
+    // Native Minecraft dependencies
     includeDependency("org.yaml", "snakeyaml", "1.30")
     includeDependency("com.google.code.gson", "gson", "2.8.8")
     includeDependency("com.google.guava", "guava", "31.0.1-jre")
     includeDependency("org.apache.logging.log4j", "log4j-api", "2.17.1")
 
     // Paper
-    includeDependency("io.papermc.paper", "paper-api", "1.18.2-R0.1-SNAPSHOT")
+    includeDependency("io.papermc.paper", "paper-api", "1.18.1-R0.1-SNAPSHOT")
 
     // Third party dependencies
     includeDependency("org.checkerframework", "checker-qual", "3.22.1")
     // Adventure & Minimessage
-    includeDependency("net.kyori", "adventure-api", "4.11.0")
-    includeDependency("net.kyori", "adventure-text-minimessage", "4.11.0")
-    includeDependency("net.kyori", "adventure-platform-bukkit", "4.1.0")
+    includeDependency("net.kyori", "adventure-api", "4.9.3")
+    includeDependency("net.kyori", "adventure-text-minimessage", "4.1.0-SNAPSHOT")
+    includeDependency("net.kyori", "adventure-platform-bukkit", "4.0.1")
     includeDependency("com.intellectualsites.paster", "Paster", "1.1.4")
 
     // IntellectualSites plugins

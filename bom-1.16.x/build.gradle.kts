@@ -3,7 +3,7 @@ plugins {
 }
 
 bomGenerator {
-    // Native Minecraft dependencies - locked at 1.16.5
+    // Native Minecraft dependencies
     includeDependency("org.yaml", "snakeyaml", "1.27")
     includeDependency("com.google.code.gson", "gson", "2.8.0")
     includeDependency("com.google.guava", "guava", "21.0")
@@ -29,6 +29,7 @@ bomGenerator {
     // Plugin dependencies
     includeDependency("com.github.MilkBowl", "VaultAPI", "1.7.1")
     includeDependency("org.bstats", "bstats-bukkit", "3.0.0")
+    includeDependency("org.bstats", "bstats-base", "3.0.0")
 
     // Platform dependencies
     includeDependency("io.papermc", "paperlib", "1.0.7")
