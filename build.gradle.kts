@@ -10,7 +10,7 @@ plugins {
     eclipse
 }
 
-group = "com.intellectualsites"
+group = "com.intellectualsites.bom"
 version = "1.0.0-SNAPSHOT"
 
 repositories {
