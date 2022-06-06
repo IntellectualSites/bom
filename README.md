@@ -9,7 +9,7 @@ This repository implements a [Maven BOM](https://maven.apache.org/guides/introdu
 ### Gradle
 ```kt
 dependencies {
-    implementation(platform("com.intellectualsites:bom:<VERSION>"))
+    implementation(platform("com.intellectualsites.bom:bom-newest:<VERSION>"))
 }
 ```
 You can find more information about shared and managed dependencies with Gradle [here](https://docs.gradle.org/current/userguide/platforms.html).
@@ -19,8 +19,8 @@ You can find more information about shared and managed dependencies with Gradle 
 <dependencyManagement>
     <dependencies>
         <dependency>
-            <groupId>com.intellectualsites</groupId>
-            <artifactId>bom</artifactId>
+            <groupId>com.intellectualsites.bom</groupId>
+            <artifactId>bom-newest</artifactId>
             <version>VERSION</version>
             <scope>import</scope>
             <type>pom</type>
