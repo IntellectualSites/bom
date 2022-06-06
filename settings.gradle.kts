@@ -1,3 +1,3 @@
-rootProject.name = "intellectualsites-bom"
+rootProject.name = "bom"
 
 include("bom")

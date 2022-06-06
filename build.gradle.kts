@@ -30,17 +30,15 @@ signing {
 publishing {
     publications {
         create<MavenPublication>("maven") {
-
             pom {
-
                 name.set(project.name + " " + project.version)
                 description.set("Bill of materials for IntellectualSites projects")
                 url.set("https://github.com/IntellectualSites/bom")
 
                 licenses {
                     license {
-                        name.set("GNU General Public License, Version 3.0")
-                        url.set("https://www.gnu.org/licenses/gpl-3.0.html")
+                        name.set("MIT")
+                        url.set("https://opensource.org/licenses/MIT")
                         distribution.set("repo")
                     }
                 }
