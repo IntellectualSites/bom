@@ -7,7 +7,7 @@ bomGenerator {
     includeDependency("org.yaml", "snakeyaml", "1.27")
     includeDependency("com.google.code.gson", "gson", "2.8.0")
     includeDependency("com.google.guava", "guava", "21.0")
-    includeDependency("org.apache.logging.log4j", "log4j-api", "2.8.1")
+    includeDependency("org.apache.logging.log4j", "log4j-api", "2.17.2")
 
     // Paper
     includeDependency("com.destroystokyo.paper", "paper-api", "1.16.5-R0.1-SNAPSHOT")
