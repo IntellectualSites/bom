@@ -4,7 +4,7 @@ plugins {
 
 bomGenerator {
     // Native Minecraft dependencies
-    includeDependency("org.yaml", "snakeyaml", "1.27")
+    includeDependency("org.yaml", "snakeyaml", "1.30")
     includeDependency("com.google.code.gson", "gson", "2.8.0")
     includeDependency("com.google.guava", "guava", "21.0")
     includeDependency("org.apache.logging.log4j", "log4j-api", "2.8.1")
