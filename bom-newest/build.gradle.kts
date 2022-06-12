@@ -17,7 +17,7 @@ bomGenerator {
     // Adventure & Minimessage
     includeDependency("net.kyori", "adventure-api", "4.11.0")
     includeDependency("net.kyori", "adventure-text-minimessage", "4.11.0")
-    includeDependency("net.kyori", "adventure-platform-bukkit", "4.1.0")
+    includeDependency("net.kyori", "adventure-platform-bukkit", "4.1.1")
     includeDependency("com.intellectualsites.paster", "Paster", "1.1.4")
 
     // IntellectualSites plugins
