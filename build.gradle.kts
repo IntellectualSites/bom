@@ -10,7 +10,7 @@ plugins {
     eclipse
 }
 
-version = "1.8-SNAPSHOT"
+version = "1.8"
 
 subprojects {
     apply {
@@ -64,8 +64,8 @@ allprojects {
 
                     licenses {
                         license {
-                            name.set("GNU General Public License, Version 3.0")
-                            url.set("https://www.gnu.org/licenses/gpl-3.0.html")
+                            name.set("The MIT License")
+                            url.set("https://opensource.org/licenses/MIT")
                             distribution.set("repo")
                         }
                     }

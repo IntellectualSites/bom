@@ -3,10 +3,6 @@
     "config:base",
     ":disableDependencyDashboard"
   ],
-  "timezone": "Europe/Berlin",
-  "schedule": [
-    "before 9am"
-  ],
   "packageRules": [
     {
       "matchPaths": ["bom-1.16.x/**", "bom-1.18.x/**"],

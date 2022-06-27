@@ -20,14 +20,14 @@ bomGenerator {
     includeDependency("net.kyori", "adventure-platform-bukkit", "4.1.1")
 
     // IntellectualSites plugins
-    includeDependency("com.plotsquared", "PlotSquared-Core", "6.9.0")
-    includeDependency("com.plotsquared", "PlotSquared-Bukkit", "6.9.0")
-    includeDependency("com.fastasyncworldedit", "FastAsyncWorldEdit-Core", "2.3.0")
-    includeDependency("com.fastasyncworldedit", "FastAsyncWorldEdit-Bukkit", "2.3.0")
+    includeDependency("com.plotsquared", "PlotSquared-Core", "6.9.1")
+    includeDependency("com.plotsquared", "PlotSquared-Bukkit", "6.9.1")
+    includeDependency("com.fastasyncworldedit", "FastAsyncWorldEdit-Core", "2.4.0")
+    includeDependency("com.fastasyncworldedit", "FastAsyncWorldEdit-Bukkit", "2.4.0")
 
     // IntellectualSites libraries
     includeDependency("com.intellectualsites.paster", "Paster", "1.1.4")
-    includeDependency("com.intellectualsites.informative-annotations", "informative-annotations", "1.1")
+    includeDependency("com.intellectualsites.informative-annotations", "informative-annotations", "1.2")
 
     // Plugin dependencies
     includeDependency("com.github.MilkBowl", "VaultAPI", "1.7.1")
