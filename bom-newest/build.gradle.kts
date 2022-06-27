@@ -3,6 +3,11 @@ plugins {
 }
 
 bomGenerator {
+    // FastAsyncWorldEdit, PlotSquared, etc. serve a bom on its on, which we don't want here
+    excludeProject("bom-1.16.x")
+    excludeProject("bom-1.18.x")
+    excludeProject("bom-newest")
+
     // Native Minecraft dependencies - locked at the version the game uses
     includeDependency("org.yaml", "snakeyaml", "1.30")
     includeDependency("com.google.code.gson", "gson", "2.8.9")
