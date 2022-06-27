@@ -42,5 +42,4 @@ bomGenerator {
     // Platform dependencies
     includeDependency("io.papermc", "paperlib", "1.0.7")
     includeDependency("dev.notmyfault.serverlib", "ServerLib", "2.3.1")
-    excludeProject("dev.notmyfault.serverlib:serverlib-bukkit")
 }
