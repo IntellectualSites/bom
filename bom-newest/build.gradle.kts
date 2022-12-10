@@ -9,13 +9,13 @@ bomGenerator {
     excludeProject("bom-newest")
 
     // Native Minecraft dependencies - locked at the version the game uses
-    includeDependency("org.yaml", "snakeyaml", "1.30")
-    includeDependency("com.google.code.gson", "gson", "2.8.9")
-    includeDependency("com.google.guava", "guava", "31.0.1-jre")
-    includeDependency("org.apache.logging.log4j", "log4j-api", "2.17.1")
+    includeDependency("org.yaml", "snakeyaml", "1.33")
+    includeDependency("com.google.code.gson", "gson", "2.10")
+    includeDependency("com.google.guava", "guava", "31.1-jre")
+    includeDependency("org.apache.logging.log4j", "log4j-api", "2.19.0")
 
     // Paper
-    includeDependency("io.papermc.paper", "paper-api", "1.19.2-R0.1-SNAPSHOT")
+    includeDependency("io.papermc.paper", "paper-api", "1.19.3-R0.1-SNAPSHOT")
 
     // Third party dependencies
     includeDependency("org.checkerframework", "checker-qual", "3.28.0")
