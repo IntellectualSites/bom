@@ -40,6 +40,6 @@ bomGenerator {
     includeDependency("org.bstats", "bstats-base", "3.0.0")
 
     // Platform dependencies
-    includeDependency("io.papermc", "paperlib", "1.0.7")
+    includeDependency("io.papermc", "paperlib", "1.0.8")
     includeDependency("dev.notmyfault.serverlib", "ServerLib", "2.3.1")
 }
