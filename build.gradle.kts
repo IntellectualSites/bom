@@ -75,7 +75,7 @@ allprojects {
                             id.set("NotMyFault")
                             name.set("Alexander Brandes")
                             organization.set("IntellectualSites")
-                            email.set("contact@notmyfault.dev")
+                            email.set("contact(at)notmyfault.dev")
                         }
                     }
 
