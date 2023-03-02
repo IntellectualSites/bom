@@ -31,7 +31,7 @@ bomGenerator {
     includeDependency("com.fastasyncworldedit", "FastAsyncWorldEdit-Bukkit", "2.5.2")
 
     // IntellectualSites libraries
-    includeDependency("com.intellectualsites.paster", "Paster", "1.1.4")
+    includeDependency("com.intellectualsites.paster", "Paster", "1.1.5")
     includeDependency("com.intellectualsites.informative-annotations", "informative-annotations", "1.2")
 
     // Plugin dependencies
