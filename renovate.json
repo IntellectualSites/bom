@@ -28,6 +28,5 @@
     }
   ],
   "labels": ["Renovate"],
-  "rebaseWhen": "conflicted",
-  "reviewers": ["NotMyFault"]
+  "rebaseWhen": "conflicted"
 }
