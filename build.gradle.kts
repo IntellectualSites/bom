@@ -4,7 +4,7 @@ plugins {
     `maven-publish`
     signing
 
-    id("io.github.gradle-nexus.publish-plugin") version "1.2.0"
+    id("io.github.gradle-nexus.publish-plugin") version "1.3.0"
 
     idea
     eclipse
