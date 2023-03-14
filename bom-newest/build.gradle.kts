@@ -20,7 +20,7 @@ bomGenerator {
     // Third party dependencies
     includeDependency("org.checkerframework", "checker-qual", "3.32.0")
     // Adventure & Minimessage
-    includeDependency("net.kyori", "adventure-api", "4.12.0")
+    includeDependency("net.kyori", "adventure-api", "4.13.0")
     includeDependency("net.kyori", "adventure-text-minimessage", "4.12.0")
     includeDependency("net.kyori", "adventure-platform-bukkit", "4.2.0")
 
