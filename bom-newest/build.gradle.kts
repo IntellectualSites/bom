@@ -22,7 +22,7 @@ bomGenerator {
     // Adventure & Minimessage
     includeDependency("net.kyori", "adventure-api", "4.12.0")
     includeDependency("net.kyori", "adventure-text-minimessage", "4.12.0")
-    includeDependency("net.kyori", "adventure-platform-bukkit", "4.2.0")
+    includeDependency("net.kyori", "adventure-platform-bukkit", "4.3.0")
 
     // IntellectualSites plugins
     includeDependency("com.plotsquared", "PlotSquared-Core", "6.11.1")
