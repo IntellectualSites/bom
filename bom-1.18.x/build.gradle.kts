@@ -18,7 +18,7 @@ bomGenerator {
     includeDependency("io.papermc.paper", "paper-api", "1.18.1-R0.1-SNAPSHOT")
 
     // Third party dependencies
-    includeDependency("org.checkerframework", "checker-qual", "3.33.0")
+    includeDependency("org.checkerframework", "checker-qual", "3.34.0")
     // Adventure & Minimessage
     includeDependency("net.kyori", "adventure-api", "4.9.3")
     includeDependency("net.kyori", "adventure-text-minimessage", "4.1.0-SNAPSHOT")
