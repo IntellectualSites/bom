@@ -14,7 +14,7 @@ bomGenerator {
     includeDependency("org.apache.logging.log4j", "log4j-api", "2.19.0")
 
     // Paper
-    includeDependency("io.papermc.paper", "paper-api", "1.20-R0.1-SNAPSHOT")
+    includeDependency("io.papermc.paper", "paper-api", "1.20.1-R0.1-SNAPSHOT")
 
     // Third party dependencies
     includeDependency("org.checkerframework", "checker-qual", "3.36.0")
@@ -24,8 +24,8 @@ bomGenerator {
     includeDependency("net.kyori", "adventure-platform-bukkit", "4.3.0")
 
     // IntellectualSites plugins
-    includeDependency("com.plotsquared", "PlotSquared-Core", "6.11.1")
-    includeDependency("com.plotsquared", "PlotSquared-Bukkit", "6.11.1")
+    includeDependency("com.intellectualsites.plotsquared", "plotsquared-core", "7.0.0-rc.2")
+    includeDependency("com.intellectualsites.plotsquared", "plotsquared-bukkit", "7.0.0-rc.2")
     includeDependency("com.fastasyncworldedit", "FastAsyncWorldEdit-Core", "2.6.4")
     includeDependency("com.fastasyncworldedit", "FastAsyncWorldEdit-Bukkit", "2.6.4")
 
