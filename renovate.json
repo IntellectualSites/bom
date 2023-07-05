@@ -7,7 +7,7 @@
   "automerge": true,
   "packageRules": [
     {
-      "matchPaths": ["bom-1.16.x/**", "bom-1.18.x/**"],
+      "matchPaths": ["bom-1.16.x/**"],
       "ignoreDeps": [
         "net.kyori:adventure-api",
         "net.kyori:adventure-text-minimessage",
