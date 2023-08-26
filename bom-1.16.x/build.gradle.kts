@@ -40,5 +40,5 @@ bomGenerator {
 
     // Platform dependencies
     includeDependency("io.papermc", "paperlib", "1.0.8")
-    includeDependency("dev.notmyfault.serverlib", "ServerLib", "2.3.1")
+    includeDependency("dev.notmyfault.serverlib", "ServerLib", "2.3.4")
 }
