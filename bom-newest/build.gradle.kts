@@ -8,7 +8,7 @@ bomGenerator {
     excludeProject("bom-newest")
 
     // Native Minecraft dependencies - locked at the version the game uses
-    includeDependency("org.yaml", "snakeyaml", "2.0")
+    includeDependency("org.yaml", "snakeyaml", "2.2")
     includeDependency("com.google.code.gson", "gson", "2.10.1")
     includeDependency("com.google.guava", "guava", "32.1.2-jre")
     includeDependency("org.apache.logging.log4j", "log4j-api", "2.19.0")
