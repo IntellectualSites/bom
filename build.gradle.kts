@@ -75,14 +75,16 @@ allprojects {
                             id.set("NotMyFault")
                             name.set("Alexander Brandes")
                             organization.set("IntellectualSites")
+                            organizationUrl.set("https://github.com/IntellectualSites/")
                             email.set("contact(at)notmyfault.dev")
                         }
                     }
 
                     scm {
                         url.set("https://github.com/IntellectualSites/bom")
-                        connection.set("scm:https://IntellectualSites@github.com/IntellectualSites/bom.git")
-                        developerConnection.set("scm:git://github.com/IntellectualSites/bom.git")
+                        connection.set("scm:git:https://github.com/IntellectualSites/bom.git")
+                        developerConnection.set("scm:git:git@github.com:IntellectualSites/bom.git")
+                        tag.set("${project.version}")
                     }
 
                     issueManagement{
