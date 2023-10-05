@@ -31,7 +31,7 @@ bomGenerator {
 
     // IntellectualSites libraries
     includeDependency("com.intellectualsites.paster", "Paster", "1.1.5")
-    includeDependency("com.intellectualsites.informative-annotations", "informative-annotations", "1.3")
+    includeDependency("com.intellectualsites.informative-annotations", "informative-annotations", "1.4")
 
     // Plugin dependencies
     includeDependency("com.github.MilkBowl", "VaultAPI", "1.7.1")
