@@ -29,5 +29,19 @@
     }
   ],
   "labels": ["Renovate"],
-  "rebaseWhen": "conflicted"
+  "rebaseWhen": "conflicted",
+  "regexManagers": [
+    {
+      "fileMatch": ["README.md"],
+      "matchStrings": ["implementation\\(platform\\(\"com.intellectualsites.bom:bom-newest:(?<currentValue>.*?)\\\""],
+      "depNameTemplate": "com.intellectualsites.bom:bom-newest",
+      "datasourceTemplate": "maven"
+    },
+    {
+      "fileMatch": ["README.md"],
+      "matchStrings": ["<version>(?<currentValue>.*?)<\/version>"],
+      "depNameTemplate": "com.intellectualsites.bom:bom-newest",
+      "datasourceTemplate": "maven"
+    }
+  ]
 }
