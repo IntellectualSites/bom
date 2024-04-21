@@ -45,7 +45,7 @@ allprojects {
     }
 
     signing {
-        if (!version.toString().endsWith("-SNAPSHOT")) {
+        if (!project.hasProperty("skip.signing") && !version.toString().endsWith("-SNAPSHOT")) {
             val signingKey: String? by project
             val signingPassword: String? by project
             useInMemoryPgpKeys(signingKey, signingPassword)
