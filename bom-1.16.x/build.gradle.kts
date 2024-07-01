@@ -17,7 +17,7 @@ bomGenerator {
     includeDependency("com.destroystokyo.paper", "paper-api", "1.16.5-R0.1-SNAPSHOT")
 
     // Third party dependencies
-    includeDependency("org.checkerframework", "checker-qual", "3.44.0")
+    includeDependency("org.checkerframework", "checker-qual", "3.45.0")
     // Adventure & Minimessage
     includeDependency("net.kyori", "adventure-api", "4.9.3")
     includeDependency("net.kyori", "adventure-text-minimessage", "4.1.0-SNAPSHOT")
