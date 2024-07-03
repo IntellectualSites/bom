@@ -30,6 +30,13 @@ allprojects {
         mavenCentral()
         maven("https://oss.sonatype.org/content/repositories/snapshots/")
         maven {
+            url = uri("https://maven.enginehub.org/repo")
+            content {
+                includeGroup("org.enginehub")
+                includeGroup("com.sk89q")
+            }
+        }
+        maven {
             url = uri("https://jitpack.io")
             content {
                 includeModule("com.github.MilkBowl", "VaultAPI")
