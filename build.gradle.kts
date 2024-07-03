@@ -29,7 +29,13 @@ allprojects {
     repositories {
         mavenCentral()
         maven("https://oss.sonatype.org/content/repositories/snapshots/")
-        maven("https://maven.enginehub.org/repo")
+        maven {
+            url = uri("https://maven.enginehub.org/repo")
+            content {
+                includeGroup("org.enginehub")
+                includeGroup("com.sk89q")
+            }
+        }
         maven {
             url = uri("https://jitpack.io")
             content {
