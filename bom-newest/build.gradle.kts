@@ -24,7 +24,7 @@ bomGenerator {
     includeDependency("net.kyori", "adventure-platform-bukkit", "4.3.4")
 
     // IntellectualSites plugins
-    includeDependency("com.intellectualsites.plotsquared", "plotsquared-core", "7.3.9")
+    includeDependency("com.intellectualsites.plotsquared", "plotsquared-core", "7.3.10")
     includeDependency("com.intellectualsites.plotsquared", "plotsquared-bukkit", "7.3.10")
     includeDependency("com.fastasyncworldedit", "FastAsyncWorldEdit-Core", "2.11.1")
     includeDependency("com.fastasyncworldedit", "FastAsyncWorldEdit-Bukkit", "2.11.1")
