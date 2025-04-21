@@ -1,10 +1,10 @@
+import com.vanniktech.maven.publish.SonatypeHost
 import java.net.URI
 
 plugins {
-    `maven-publish`
     signing
 
-    id("io.github.gradle-nexus.publish-plugin") version "2.0.0"
+    id("com.vanniktech.maven.publish") version "0.31.0"
 
     idea
     eclipse
@@ -14,7 +14,7 @@ version = "1.53-SNAPSHOT"
 
 subprojects {
     apply {
-        plugin<MavenPublishPlugin>()
+        plugin<com.vanniktech.maven.publish.MavenPublishPlugin>()
         plugin<SigningPlugin>()
 
         plugin<IdeaPlugin>()
@@ -61,54 +61,49 @@ allprojects {
         }
     }
 
-    publishing {
-        publications {
-            create<MavenPublication>("maven") {
-                pom {
-                    name.set(project.name + " " + project.version)
-                    description.set("Bill of materials for IntellectualSites projects.")
-                    url.set("https://github.com/IntellectualSites/bom")
+    mavenPublishing {
 
-                    licenses {
-                        license {
-                            name.set("The MIT License")
-                            url.set("https://opensource.org/licenses/MIT")
-                            distribution.set("repo")
-                        }
-                    }
+        coordinates(
+            groupId = "$group",
+            artifactId = project.name,
+            version = "${project.version}",
+        )
 
-                    developers {
-                        developer {
-                            id.set("NotMyFault")
-                            name.set("Alexander Brandes")
-                            organization.set("IntellectualSites")
-                            organizationUrl.set("https://github.com/IntellectualSites/")
-                            email.set("contact(at)notmyfault.dev")
-                        }
-                    }
+        pom {
+            name.set(project.name)
+            description.set("Bill of materials for IntellectualSites projects.")
+            url.set("https://github.com/IntellectualSites/bom")
 
-                    scm {
-                        url.set("https://github.com/IntellectualSites/bom")
-                        connection.set("scm:git:https://github.com/IntellectualSites/bom.git")
-                        developerConnection.set("scm:git:git@github.com:IntellectualSites/bom.git")
-                        tag.set("${project.version}")
-                    }
-
-                    issueManagement{
-                        system.set("GitHub")
-                        url.set("https://github.com/IntellectualSites/bom/issues")
-                    }
+            licenses {
+                license {
+                    name.set("The MIT License")
+                    url.set("https://opensource.org/licenses/MIT")
+                    distribution.set("repo")
                 }
             }
-        }
-    }
-}
 
-nexusPublishing {
-    this.repositories {
-        sonatype {
-            nexusUrl.set(URI.create("https://s01.oss.sonatype.org/service/local/"))
-            snapshotRepositoryUrl.set(URI.create("https://s01.oss.sonatype.org/content/repositories/snapshots/"))
+            developers {
+                developer {
+                    id.set("NotMyFault")
+                    name.set("Alexander Brandes")
+                    organization.set("IntellectualSites")
+                    organizationUrl.set("https://github.com/IntellectualSites/")
+                    email.set("contact(at)notmyfault.dev")
+                }
+            }
+
+            scm {
+                url.set("https://github.com/IntellectualSites/bom")
+                connection.set("scm:git:https://github.com/IntellectualSites/bom.git")
+                developerConnection.set("scm:git:git@github.com:IntellectualSites/bom.git")
+                tag.set("${project.version}")
+            }
+
+            issueManagement{
+                system.set("GitHub")
+                url.set("https://github.com/IntellectualSites/bom/issues")
+            }
         }
+        publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL)
     }
 }
