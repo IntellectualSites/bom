@@ -4,7 +4,7 @@ import java.net.URI
 plugins {
     signing
 
-    id("com.vanniktech.maven.publish") version "0.31.0"
+    id("com.vanniktech.maven.publish") version "0.32.0"
 
     idea
     eclipse
