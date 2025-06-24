@@ -15,7 +15,7 @@ bomGenerator {
     includeDependency("org.apache.logging.log4j", "log4j-api", "2.24.1")
 
     // Paper
-    includeDependency("io.papermc.paper", "paper-api", "1.21.5-R0.1-SNAPSHOT")
+    includeDependency("io.papermc.paper", "paper-api", "1.21.5-no-moonrise-SNAPSHOT")
 
     // Third party dependencies
     includeDependency("org.checkerframework", "checker-qual", "3.49.4")
