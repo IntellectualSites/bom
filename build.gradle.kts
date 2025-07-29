@@ -1,4 +1,3 @@
-import com.vanniktech.maven.publish.SonatypeHost
 import java.net.URI
 
 plugins {
@@ -104,6 +103,6 @@ allprojects {
                 url.set("https://github.com/IntellectualSites/bom/issues")
             }
         }
-        publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL)
+        publishToMavenCentral()
     }
 }
