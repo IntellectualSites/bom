@@ -21,7 +21,7 @@ bomGenerator {
     includeDependency("org.checkerframework", "checker-qual", "3.51.1")
     // Adventure & Minimessage
     includeDependency("net.kyori", "adventure-api", "4.25.0")
-    includeDependency("net.kyori", "adventure-text-minimessage", "4.24.0")
+    includeDependency("net.kyori", "adventure-text-minimessage", "4.25.0")
     includeDependency("net.kyori", "adventure-platform-bukkit", "4.4.1")
 
     // IntellectualSites plugins
