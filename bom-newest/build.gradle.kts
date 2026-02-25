@@ -36,7 +36,7 @@ bomGenerator {
 
     // Plugin dependencies
     includeDependency("com.github.MilkBowl", "VaultAPI", "1.7.1")
-    includeDependency("org.bstats", "bstats-bukkit", "3.2.0")
+    includeDependency("org.bstats", "bstats-bukkit", "3.2.1")
     includeDependency("org.bstats", "bstats-base", "3.2.1")
 
     // Platform dependencies
