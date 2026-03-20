@@ -9,7 +9,7 @@ plugins {
     eclipse
 }
 
-version = "1.56-SNAPSHOT"
+version = "1.56"
 
 subprojects {
     apply {
