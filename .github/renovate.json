@@ -7,6 +7,10 @@
   "automerge": true,
   "packageRules": [
     {
+      "matchManagers": ["gradle", "gradle-wrapper"],
+      "enabled": false
+    },
+    {
       "matchFileNames": [
         "bom-1.16.x/**"
       ],
